@@ -1,32 +1,19 @@
-![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
+# flash_chat
 
+Flash Chat is from London App Brewery's Flutter course in LinkedIn Learning.
+You will need to have your own Firebase credentials and put them in the appropriate folders for Android and iOS.
 
-# Flash Chat ⚡️
+# Troubles during following the course
+1. Encountered this error:
+flutter com.android.builder.dexing.DexArchiveMergerException: Error while merging dex archives: The number of method references in a .dex file cannot exceed 64K.
 
-## Our Goal
+To solve this, I changed minSdkVersion to 21 in android/app/build.gradle as per [this link's](https://github.com/flutter/flutter/issues/20747#issuecomment-536337915) advice.
 
-The objective of this tutorial is to learn how to incorporate Firebase into our Flutter apps. We'll be using Firebase Cloud Firestore as well as the Firebase authentication package to equip our app with a cloud based NoSQL database and secure authentication methods. 
+2. Messages not in order
+When documents are added to the collection in Firestore, the document ID are not ordered.
 
+To solve this, I added a createTime property and sort on retrieval.
 
-## What you will create
-
-We’re going to build a modern messaging app where users can sign up and log in to chat.
-
-![Finished App](https://github.com/londonappbrewery/Images/blob/master/flash_chat_flutter_demo.gif)
-
-## What you will learn
-
-- How to incorporate Firebase into your Flutter projects.
-- How to use Firebase authentication to register and sign in users.
-- How to create beautiful animations using the Flutter Hero widget.
-- How to create custom aniamtions using Flutter's animation controller. 
-- Learn all about mixins and how they differ from superclasses.
-- Learn about Streams and how they work.
-- Learn to use ListViews to build scrolling views.
-- How to use Firebase Cloud Firestore to store and retrieve data on the fly.
-
-
-
->This is a companion project to The App Brewery's Complete Flutter Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
-
-![End Banner](https://github.com/londonappbrewery/Images/blob/master/readme-end-banner.png)
+This application was built using:
+- Flutter v1.12.13+hotfix.5
+- Dart 2.7.0
