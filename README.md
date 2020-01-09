@@ -1,7 +1,7 @@
 # flash_chat
 
 Flash Chat is from London App Brewery's Flutter course in LinkedIn Learning.
-You will need to have your own Firebase credentials and put them in the appropriate folders for Android and iOS.
+You will need to create your own Firebase credentials and put them in the appropriate folders for Android and iOS.
 
 # Troubles during following the course
 1. Encountered this error:
