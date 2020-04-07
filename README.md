@@ -7,7 +7,7 @@ You will need to create your own Firebase credentials and put them in the approp
 1. Encountered this error:
 flutter com.android.builder.dexing.DexArchiveMergerException: Error while merging dex archives: The number of method references in a .dex file cannot exceed 64K.
 
-   To solve this, I changed minSdkVersion to 21 in android/app/build.gradle as per [this link's]             (https://github.com/flutter/flutter/issues/20747#issuecomment-536337915) advice.
+   To solve this, I changed minSdkVersion to 21 in android/app/build.gradle as per (this link's)             [https://github.com/flutter/flutter/issues/20747#issuecomment-536337915] advice.
 
 2. Chat messages not in order
 
